@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="styles.css" />-->
+    <title>Contactate con nosotros!</title>
+</head>
+<body>
+    <h1>Por favor, rellene todos los casilleros</h1>
+    <form method="post" action=""> <!--Ojo con esta linea-->
+      <fieldset>
+        <label for="primer-nombre">Ingrese su nombre: <input id="primer-nombre" name="primer-nombre" type="text" required /></label>
+        <label for="apellido">Ingrese su apellido: <input id="apellido" name="apellido" type="text" required /></label>
+        <label for="email">Ingrese su Email: <input id="email" name="email" type="email" required /></label>
+        <!--<label for="contraseña">Introduzca su contraseña: <input id="contraseña" name="contraseña" type="password" pattern="[a-z0-5]{8,}" required /></label> -->
+      </fieldset>
+      <fieldset>
+        <legend>¿Que deseas hacer?</legend>
+        <label for="informar-tiempo"><input id="informar-tiempo" type="radio" name="accion-deseada" class="inline" checked /> Informar el Tiempo</label>
+        <label for="suscripcion-novedades"><input id="suscripcion-novedades" type="radio" name="accion-deseada" class="inline" /> Suscribirme a las Novedades</label>
+      </fieldset>
+      <fieldset>
+        <label for="foto-adjunta">Cargá tu foto acá: <input id="foto-adjunta" type="file" name="foto" /></label><br>
+        <label for="ubicacion">¿Desde donde nos escribís?: <input id="ubicacion" type="text" name="ubicacion" /></label><br>
+        <label for="conocimiento">¿Como te enteraste de la pagina?
+          <select id="conocimiento" name="conocimiento">
+            <option value="" selected>Seleccioná uno</option>
+            <option value="1">Noticiero</option>
+            <option value="2">Canal de Youtube</option>
+            <option value="3">Redes Sociales</option>
+            <option value="4">Email</option>
+            <option value="5">Otros</option>
+          </select>
+        </label><br>
+        <label for="area-de-texto">Podés explayarte acá:
+          <textarea id="area-de-texto" name="area-de-texto" rows="3" cols="50" placeholder="¿QUe te gustaría contarnos?"></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" /> He leído y acepto los <a href="terminos_y_condiciones.html">terminos y condiciones</a><br>
+      </label>
+      <input type="submit" value="Enviar datos" />
+      <input type="reset" value="Borrar todo">
+    </form>
+
+    <a href="index.html">Volver a la pagina principal</a>
+  </body>
+</html>
