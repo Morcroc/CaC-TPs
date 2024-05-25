@@ -1,0 +1,83 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 150%;
+    background-color: rgb(245, 245, 245); 
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+
+footer {
+    background-color: rgb(186, 235, 131);
+    margin: 10% auto 0 auto;
+}
+
+.legal {
+    font-style: italic;
+}
+
+a {
+    color: rgb(99, 152, 202);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(79, 38, 228);
+}
+
+
+
+.barra {
+    overflow: hidden;
+}
+
+.barra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra li {
+    float: left;
+}
+
+.desplegable {
+    float: left;
+}
+
+.desplegable .boton {
+    font-size: 90%;
+    border: solid rgb(1, 187, 79);
+    outline: none;
+    color: white;
+    padding: 20% 30%;
+    background-color: #333; 
+    font-family: 'Bebas Neue', sans-serif; 
+}
+
+.desplegable:hover .boton {
+    background-color: rgb(74, 87, 71); 
+}
+
+.contenido_barra {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 46, 35);
+    min-width: 15%; 
+    z-index: 1;
+}
+
+.contenido_barra a {
+    color: rgb(255, 255, 255);
+    padding: 1% 1.5%;
+    text-decoration: none;
+    display: block;
+}
+
+.contenido_barra a:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.desplegable:hover .contenido_barra {
+    display: block;
+}
